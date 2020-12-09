@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="GridSize" sid="392043775624461" static="0" type="number">16</variable>
+        <event-block sid="141030834843461">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="149093658630871" type="Sprite">
+                    <param id="0" name="Instance variable">StepTimer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="699378635760691">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="730133381397765" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="356452937414439" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">270</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="513366779616172" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">GridSize</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="535702415088811">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="208087018187443" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="328773143885574" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">90</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="501612861217851" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">GridSize</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="549140896875662">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="877762988771603" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="399229537188774" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">180</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="190665105294071" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">GridSize</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="559037842966474">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="906256898114222" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="149913930254533" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="511709420403943" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">GridSize</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="136133938079941">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="450891165126106" type="Sprite">
+                    <param id="0" name="Instance variable">StepTimer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="268697296144382">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="336001859088641" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="400462669617062" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouright&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="993324482504358">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="669879616604550" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="574386530556612" type="Sprite">
+                            <param id="0" name="Animation">&quot;pioufornt&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="232105566340759">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="168375759393590" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="179034576814766" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouleft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="584775381336805">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="149155744854853" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="856744435178105" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouback&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="865426265947434">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="349428717078575" type="Sprite">
+                    <param id="0" name="Instance variable">StepTimer</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="928426120007359">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="775488216550368" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="298360538548527" type="Sprite">
+                            <param id="0" name="Angle">Sprite.Dir</param>
+                            <param id="1" name="Distance">Sprite.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="924226161383612" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">Sprite.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="139113182931720" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouright&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="101620114959668">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="420721989965860" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="499862094667396" type="Sprite">
+                            <param id="0" name="Angle">Sprite.Dir</param>
+                            <param id="1" name="Distance">Sprite.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="945700161365477" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">Sprite.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="850206306050890" type="Sprite">
+                            <param id="0" name="Animation">&quot;pioufornt&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906573635354019">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="685946051081798" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="386107284242176" type="Sprite">
+                            <param id="0" name="Angle">Sprite.Dir</param>
+                            <param id="1" name="Distance">Sprite.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="826629784370323" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">Sprite.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="166244169610223" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouleft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="160236783019993">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="713056217343733" type="Sprite">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="869641788333198" type="Sprite">
+                            <param id="0" name="Angle">Sprite.Dir</param>
+                            <param id="1" name="Distance">Sprite.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="285294408608597" type="Sprite">
+                            <param id="0" name="Instance variable">StepTimer</param>
+                            <param id="1" name="Value">Sprite.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="503372326818739" type="Sprite">
+                            <param id="0" name="Animation">&quot;piouback&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="158459306992568">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="826345566776583" type="Sprite">
+                    <param id="0" name="Instance variable">StepTimer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
